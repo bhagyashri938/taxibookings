@@ -1,0 +1,9 @@
+
+
+<h1>Create Taxi</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+<a href="{% url 'taxi_list' %}">Back to Taxi List</a>

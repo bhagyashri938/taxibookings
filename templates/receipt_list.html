@@ -1,0 +1,7 @@
+
+<h1>Payment Receipts</h1>
+<ul>
+    {% for receipt in receipts %}
+        <li>Receipt ID: {{ receipt.receipt_id }} - Amount: {{ receipt.amount }} - Date: {{ receipt.date }}</li>
+    {% endfor %}
+</ul>

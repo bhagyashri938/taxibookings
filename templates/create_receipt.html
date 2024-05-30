@@ -1,0 +1,11 @@
+
+
+<h1>Create Payment Receipt</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+<a href="{% url 'receipt_list' %}">Back to Payment Receipts List</a>
+
+

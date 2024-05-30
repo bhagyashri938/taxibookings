@@ -1,0 +1,6 @@
+<h1>Taxi List</h1>
+<ul>
+    {% for taxi in taxis %}
+        <li>{{ taxi.registration_number }} - {{ taxi.model }} ({{ taxi.capacity }} seats)</li>
+    {% endfor %}
+</ul>
